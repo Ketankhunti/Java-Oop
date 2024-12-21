@@ -121,3 +121,55 @@ public class Card {
     }
 
 }
+
+ //   Enum example
+
+/*
+
+public class Card3 {
+    private final Rank rank;
+    private final Suit suit;
+
+    public Card3(Rank rank, Suit suit) {
+        this.rank = rank;
+        this.suit = suit;
+    }
+
+    public Suit getSuit() {
+        return suit;
+    }
+
+    public Rank getRank() {
+        return rank;
+    }
+
+    public String toString() {
+        return rank + " of " + suit;
+    }
+}
+
+public enum Suit {
+   DIAMONDS,
+   CLUBS,
+   HEARTS,
+   SPADES
+}
+
+public enum Rank {
+   DEUCE, THREE, FOUR, FIVE, SIX, SEVEN,
+   EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE
+}
+
+public class Deck3 {
+    private static Card3[] cards = new Card3[52];
+    public Deck3() {
+        int i = 0;
+        for (Suit suit : Suit.values()) {
+            for (Rank rank : Rank.values()) {
+                cards[i++] = new Card3(rank, suit);
+            }
+        }
+    }
+}
+
+*/
